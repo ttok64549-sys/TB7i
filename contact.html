@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — The Black Studio</title>
+<meta name="description" content="Get in touch with The Black Studio — business, press and community enquiries.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader"><div class="loader-box"><div class="loader-mark">TBS</div><div class="loader-bar"><span></span></div></div></div>
+<div id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="game.html" class="nav-link">Sector Zero</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="contact.html" class="nav-link nav-cta active">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="https://picsum.photos/seed/contactbg/1920/1080?grayscale" alt="Contact">
+  <div class="inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Get in Touch</h1>
+    <p>Business, press or just a hello — we read everything.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:3rem;align-items:start">
+
+      <div class="reveal">
+        <span class="eyebrow">// Send a Message</span>
+        <h2 style="margin-bottom:1.5rem">Contact Form</h2>
+        <form class="form" data-validate novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+              <span class="err-msg">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+              <span class="err-msg">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic…</option>
+              <option>Business / Partnership</option>
+              <option>Press &amp; Media</option>
+              <option>Careers</option>
+              <option>Community / Feedback</option>
+              <option>Other</option>
+            </select>
+            <span class="err-msg">Please select a subject.</span>
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+            <span class="err-msg">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note">We typically respond within 2–3 business days.</p>
+          <div class="form-success"></div>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <span class="eyebrow">// Direct Lines</span>
+        <h2 style="margin-bottom:1.5rem">Contact Info</h2>
+        <div class="grid" style="gap:1rem">
+          <div class="card"><div class="card-icon">✉</div><h3>General</h3><p><a href="mailto:contact@ttok64549@gmail.com" style="color:var(--accent-2)">contact@ttok64549@gmail.com</a></p></div>
+          <div class="card"><div class="card-icon">◈</div><h3>Press &amp; Media</h3><p><a href="mailto:press@ttok64549@gmail.com" style="color:var(--accent-2)">press@ttok64549@gmail.com</a></p></div>
+          <div class="card"><div class="card-icon">◆</div><h3>Careers</h3><p><a href="mailto:jobs@ttok64549@gmail.com" style="color:var(--accent-2)">jobs@ttok64549@gmail.com</a></p></div>
+          <div class="card"><div class="card-icon">◎</div><h3>Studio Location</h3><p>Rawalpindi, Punjab, Pakistan</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Find Us</span>
+      <h2>Rawalpindi, Pakistan</h2>
+      <p>The city that inspired Sector Zero.</p>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        title="Map of Rawalpindi"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=72.95%2C33.52%2C73.09%2C33.62&amp;layer=mapnik"
+        loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width:900px">
+    <div class="section-head center reveal">
+      <span class="eyebrow">// FAQ</span>
+      <h2>Frequently Asked</h2>
+    </div>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-head">When will Sector Zero release? <span class="plus">+</span></button>
+        <div class="acc-body"><p>No confirmed date yet. The game is in active development. Subscribe to our newsletter or join Discord for the announcement first.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">What platforms will it be on? <span class="plus">+</span></button>
+        <div class="acc-body"><p>PC is the primary target, built in Unity 3D. Console versions will be considered after launch.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Is the game set in a real place? <span class="plus">+</span></button>
+        <div class="acc-body"><p>Yes — Sector Zero is set in a fictionalised, devastated version of Rawalpindi, Pakistan, with environments inspired by the streets and atmosphere of Rajabazar.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Can I work with The Black Studio? <span class="plus">+</span></button>
+        <div class="acc-body"><p>Absolutely. Check the <a href="careers.html" style="color:var(--accent-2)">Careers page</a> for open roles, or send a message through the form above.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Will there be multiplayer? <span class="plus">+</span></button>
+        <div class="acc-body"><p>Sector Zero is currently designed as a single-player survival experience. Co-op is something we'd love to explore post-launch.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:1rem">
+          <span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+        <p>An indie game studio from Pakistan, building dark, cinematic and immersive worlds.</p>
+        <div class="socials"><a href="#">TW</a><a href="#">YT</a><a href="#">DC</a><a href="#">IG</a></div>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press Kit</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Game</h4><ul>
+        <li><a href="game.html">Sector Zero</a></li><li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">Devlog</a></li><li><a href="game.html#roadmap">Roadmap</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4>
+        <p>Rawalpindi, Pakistan</p>
+        <p><a href="mailto:contactttok64549@gmail.com">CONTACT :  ttok64549@gmail.com</a></p>
+        <p style="margin-top:.6rem">CEO: Muhammad Atiqur Rehman</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> The Black Studio. All rights reserved.</span>
+      <span>Sector Zero — Under Development</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

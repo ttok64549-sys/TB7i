@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — The Black Studio</title>
+<meta name="description" content="Screenshots, concept art and behind-the-scenes media from Sector Zero by The Black Studio.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader"><div class="loader-box"><div class="loader-mark">TBS</div><div class="loader-bar"><span></span></div></div></div>
+<div id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="game.html" class="nav-link">Sector Zero</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="https://picsum.photos/seed/galleryhero/1920/1080?grayscale" alt="Gallery">
+  <div class="inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Gallery</div>
+    <h1>Media Gallery</h1>
+    <p>Screenshots, concept art and behind-the-scenes from Sector Zero.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="screenshots">Screenshots</button>
+      <button class="filter-btn" data-filter="concept">Concept Art</button>
+      <button class="filter-btn" data-filter="bts">Behind the Scenes</button>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal" data-category="screenshots" data-lightbox="https://picsum.photos/seed/g1/1600/1000?grayscale" data-caption="Sector Zero — Street Encounter">
+        <img src="https://picsum.photos/seed/g1/800/500?grayscale" alt="Street encounter"><figcaption>Street Encounter</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="concept" data-lightbox="https://picsum.photos/seed/g2/1600/1000?grayscale" data-caption="Concept Art — Infected Design">
+        <img src="https://picsum.photos/seed/g2/800/500?grayscale" alt="Infected design"><figcaption>Infected Design</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="bts" data-lightbox="https://picsum.photos/seed/g3/1600/1000?grayscale" data-caption="Behind the Scenes — Motion Capture">
+        <img src="https://picsum.photos/seed/g3/800/500?grayscale" alt="Behind the scenes"><figcaption>Behind the Scenes</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="screenshots" data-lightbox="https://picsum.photos/seed/g4/1600/1000?grayscale" data-caption="Sector Zero — Night Patrol">
+        <img src="https://picsum.photos/seed/g4/800/500?grayscale" alt="Night patrol"><figcaption>Night Patrol</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="concept" data-lightbox="https://picsum.photos/seed/g5/1600/1000?grayscale" data-caption="Concept Art — Rajabazar Market">
+        <img src="https://picsum.photos/seed/g5/800/500?grayscale" alt="Rajabazar market"><figcaption>Rajabazar Market</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="screenshots" data-lightbox="https://picsum.photos/seed/g6/1600/1000?grayscale" data-caption="Sector Zero — Horde Incoming">
+        <img src="https://picsum.photos/seed/g6/800/500?grayscale" alt="Horde incoming"><figcaption>Horde Incoming</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="bts" data-lightbox="https://picsum.photos/seed/g7/1600/1000?grayscale" data-caption="Behind the Scenes — Level Blockout">
+        <img src="https://picsum.photos/seed/g7/800/500?grayscale" alt="Level blockout"><figcaption>Level Blockout</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="concept" data-lightbox="https://picsum.photos/seed/g8/1600/1000?grayscale" data-caption="Concept Art — Weapon Sketches">
+        <img src="https://picsum.photos/seed/g8/800/500?grayscale" alt="Weapon sketches"><figcaption>Weapon Sketches</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-category="screenshots" data-lightbox="https://picsum.photos/seed/g9/1600/1000?grayscale" data-caption="Sector Zero — Safehouse Interior">
+        <img src="https://picsum.photos/seed/g9/800/500?grayscale" alt="Safehouse"><figcaption>Safehouse Interior</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">// Trailer</span>
+      <h2>Watch the Reveal</h2>
+      <p>Official announcement trailer coming soon.</p>
+    </div>
+    <div class="reveal" style="border:1px solid var(--border);aspect-ratio:16/9;display:grid;place-items:center;background:#000;position:relative;overflow:hidden">
+      <img src="https://picsum.photos/seed/trailerbg/1600/900?grayscale" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.3)">
+      <div style="position:relative;text-align:center">
+        <div style="width:80px;height:80px;border:2px solid var(--accent-2);border-radius:50%;display:grid;place-items:center;margin:0 auto 1rem;font-size:1.6rem;color:var(--accent-2)">▶</div>
+        <p style="color:var(--muted);letter-spacing:.2em;font-size:.8rem;text-transform:uppercase">Trailer Coming Soon</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="gallery-grid" data-tbs-gallery></div>
+
+<!-- WALLPAPERS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Downloads</span>
+      <h2>Wallpapers</h2>
+    </div>
+    <div class="grid grid-3">
+      <a href="#" class="card reveal"><div class="card-icon">↓</div><h3>1920 × 1080</h3><p>Desktop wallpaper — Full HD.</p></a>
+      <a href="#" class="card reveal"><div class="card-icon">↓</div><h3>2560 × 1440</h3><p>Desktop wallpaper — QHD.</p></a>
+      <a href="#" class="card reveal"><div class="card-icon">↓</div><h3>1080 × 1920</h3><p>Mobile wallpaper — Portrait.</p></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:1rem">
+          <span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+        <p>An indie game studio from Pakistan, building dark, cinematic and immersive worlds.</p>
+        <div class="socials"><a href="#">TW</a><a href="#">YT</a><a href="#">DC</a><a href="#">IG</a></div>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press Kit</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Game</h4><ul>
+        <li><a href="game.html">Sector Zero</a></li><li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">Devlog</a></li><li><a href="game.html#roadmap">Roadmap</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4>
+        <p>Rawalpindi, Pakistan</p>
+        <p><a href="mailto:contact@theblackstudio.com">contact@theblackstudio.com</a></p>
+        <p style="margin-top:.6rem">CEO: Muhammad Atiqur Rehman</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> The Black Studio. All rights reserved.</span>
+      <span>Sector Zero — Under Development</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img src="" alt="">
+  <div class="lightbox-caption"></div>
+</div>
+
+<button id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

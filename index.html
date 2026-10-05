@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Black Studio — Crafting Nightmares Into Reality</title>
+<meta name="description" content="The Black Studio is an indie game studio from Pakistan, developing Sector Zero — a 3D zombie-apocalypse survival game set in Rawalpindi.">
+<meta property="og:title" content="The Black Studio">
+<meta property="og:description" content="Developers of Sector Zero — a 3D zombie survival game set in Rawalpindi, Pakistan.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader" class="hidden">
+  <div class="loader-box">
+    <div class="loader-mark">BLACK</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<div id="scrollProgress" style="width: 0%;"></div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><img src="C:\Users\ATIQ\Desktop\web.studio\IMAGES\LOGO.png" alt="The Black Studio"></span>
+      <span class="logo-text">The Black<small>Studio</small></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="game.html" class="nav-link">Sector Zero</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="F:\web.studio\IMAGES\Untitled design.gif" alt="Ruined city skyline">
+  </div>
+  <canvas id="emberCanvas"></canvas>
+  <div class="hero-content">
+    <span class="badge"> SECTOR ZER0 - Under Development - coming soon</span>
+    <h1>The Black <span class="glitch">Studio</span></h1>
+    <p class="lead">From the ruins of Rawalpindi, a new nightmare rises. <span data-typewriter="[&quot;survival.&quot;,&quot;horror.&quot;,&quot;story.&quot;,&quot;Sector Zero.&quot;]">horror.</span>
+    </p>
+    <div class="hero-actions"><a href="game.html" class="btn btn-primary">Explore Sector Zero</a><a href="about.html" class="btn btn-ghost">About the Studio</a></div>
+  </div>
+  <div class="scroll-hint">
+    Scroll
+    <span></span>
+  </div>
+</section>
+
+<!-- FEATURED GAME -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal visible">
+      <span class="eyebrow">// 01 — Current Project</span>
+      <h2>Featured Game</h2>
+      <p>Our flagship title, in active development with Unity 3D.</p>
+    </div>
+
+    <article class="featured reveal visible">
+      <div class="featured-media">
+        <img src="F:\web.studio\IMAGES\ChatGPT Image Sep 13, 2026, 02_26_19 AM.png" alt="Sector Zero key art">
+      </div>
+      <div class="featured-body">
+        <span class="badge">In Development</span>
+        <h2>Sector Zero</h2>
+        <p>
+          A 3D zombie-apocalypse survival game set in a devastated Rawalpindi, Pakistan —
+          inspired by the streets and atmosphere of Rajabazar. Explore a collapsed city,
+          scavenge for resources, confront the infected, and fight to stay alive.
+        </p>
+        <div class="meta-row">
+          <span class="tag">Zombie Apocalypse</span>
+          <span class="tag">Survival</span>
+          <span class="tag">Action</span>
+          <span class="tag">Horror</span>
+          <span class="tag">Unity 3D</span>
+        </div>
+        <div style="margin-top:1rem">
+          <a href="game.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- STUDIO HIGHLIGHTS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head center reveal visible">
+      <span class="eyebrow">// 02 — What We Do</span>
+      <h2>Built Different</h2>
+      <p>Four pillars that define every project we ship.</p>
+    </div>
+
+    <div class="grid grid-4">
+      <div class="card reveal visible">
+        <div class="card-icon">◆</div>
+        <h3>Game Development</h3>
+        <p>Full-cycle production in Unity 3D — from combat systems and enemy AI to environmental design.</p>
+      </div>
+      <div class="card reveal visible">
+        <div class="card-icon">✎</div>
+        <h3>Storytelling</h3>
+        <p>Narrative-driven horror where every environment tells a story of collapse and survival.</p>
+      </div>
+      <div class="card reveal visible">
+        <div class="card-icon">★</div>
+        <h3>Pakistani Representation</h3>
+        <p>Authentic South Asian urban settings — the streets, sounds and atmosphere of Rawalpindi.</p>
+      </div>
+      <div class="card reveal visible">
+        <div class="card-icon">⚙</div>
+        <h3>Innovation</h3>
+        <p>Pushing indie boundaries with cinematic immersion and tension-first game design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+  <div class="container">
+    <div class="stats">
+      <div class="reveal visible">
+        <div class="stat-num" data-count="1" data-suffix="+" data-done="1">1+</div>
+        <div class="stat-label">Original Title</div>
+      </div>
+      <div class="reveal visible">
+        <div class="stat-num" data-count="100" data-suffix="%" data-done="1">100%</div>
+        <div class="stat-label">In-House Built</div>
+      </div>
+      <div class="reveal visible">
+        <div class="stat-num" data-count="2026" data-done="1">2026</div>
+        <div class="stat-label">Studio Founded</div>
+      </div>
+      <div class="reveal visible">
+        <div class="stat-num" data-count="24" data-suffix="/7" data-done="1">24/6...sun-off</div>
+        <div class="stat-label">Dev Grind</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal visible">
+      <span class="eyebrow">// 03 — Devlog</span>
+      <h2>Latest Updates</h2>
+      <p>News straight from the studio floor.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="news-card reveal visible">
+        <div class="news-thumb">
+          <img src="https://picsum.photos/seed/devlog1/800/500?grayscale" alt="Development update">
+        </div>
+        <div class="news-body">
+          <span class="news-date">Devlog · Update 01</span>
+          <h3>Combat System Prototype Complete</h3>
+          <p>The core 3D shooting and melee framework is now playable in-engine.</p>
+          <a href="news.html" class="link-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="news-card reveal visible">
+        <div class="news-thumb">
+          <img src="https://picsum.photos/seed/devlog2/800/500?grayscale" alt="Environment design">
+        </div>
+        <div class="news-body">
+          <span class="news-date">Devlog · Update 02</span>
+          <h3>Building Rajabazar in 3D</h3>
+          <p>How we're recreating the streets of Rawalpindi as a playable nightmare.</p>
+          <a href="news.html" class="link-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="news-card reveal visible">
+        <div class="news-thumb">
+          <img src="https://picsum.photos/seed/devlog3/800/500?grayscale" alt="Enemy AI">
+        </div>
+        <div class="news-body">
+          <span class="news-date">Devlog · Update 03</span>
+          <h3>Enemy AI: Making the Infected Feel Alive</h3>
+          <p>Behaviour trees, sound perception and swarm logic in Sector Zero.</p>
+          <a href="news.html" class="link-more">Read More →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="center" style="margin-top:2.5rem">
+      <a href="news.html" class="btn btn-ghost">View All News</a>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER -->
+<section class="section">
+  <div class="container">
+    <div class="newsletter reveal visible">
+      <span class="eyebrow">// Stay in the dark</span>
+      <h2>Join the Survivors List</h2>
+      <p style="color:var(--muted);max-width:520px;margin:1rem auto 0">
+        Get development updates, release news and behind-the-scenes content — before anyone else.
+      </p>
+      <form data-newsletter="">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" required="">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" style="margin-top:1rem;font-size:.85rem"></p>
+    </div>
+  </div>
+</section>
+<div data-tbs-sections=""><section class="cta-band"><div class="container"><div class="inner" style="text-align:center"><span class="eyebrow">// Custom</span><h2>admin is working</h2><p style="color:#9a9a9a;max-width:560px;margin:1rem auto 2rem">moy moy</p><a href="http://theblack7i.wordpress.com" class="btn btn-primary">store</a></div></div></section><section class="section--alt"><div class="container"><div class="section-head"><span class="eyebrow">// Custom</span><h2>THE BLACK studio</h2></div><a href="https://alligator-wlwg9j.my.canva.site/" class="btn btn-primary">about THE BLACK</a></div></section></div>
+<div data-tbs-sections=""></div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:1rem">
+          <span class="logo-mark"><img src="C:\Users\ATIQ\Desktop\web.studio\IMAGES\LOGO.png" alt=""></span>
+          <span class="logo-text">The Black<small>Studio</small></span>
+        </a>
+        <p>An indie game studio from Pakistan, building dark, cinematic and immersive worlds.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/the_black7i/" aria-label="Instagram">IN</a>
+          <a href="https://www.youtube.com/channel/UCo7QwLja3TRKxOij4wE-NLw" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Discord">DC</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="press.html">Press Kit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Game</h4>
+        <ul>
+          <li><a href="game.html">Sector Zero</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">Devlog</a></li>
+          <li><a href="game.html#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Rawalpindi, Pakistan</p>
+        <p><a href="mailto:contactttok64549@gmail.com">CONTACT :  ttok64549@gmail.com</a></p>
+        <p style="margin-top:.6rem">CEO: Muhammad Atiqur Rehman</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year="">2026</span> The Black Studio. All rights reserved.</span>
+      <span>Sector Zero — Under Development</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="Back to top" class="">↑</button>
+<script src="js/main.js"></script>
+
+</body>
+</html>

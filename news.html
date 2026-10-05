@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News & Devlog — The Black Studio</title>
+<meta name="description" content="Development updates and announcements from The Black Studio.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader"><div class="loader-box"><div class="loader-mark">TBS</div><div class="loader-bar"><span></span></div></div></div>
+<div id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="game.html" class="nav-link">Sector Zero</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="news.html" class="nav-link active">News</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="https://picsum.photos/seed/newsroomtb/1920/1080?grayscale" alt="News">
+  <div class="inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / News</div>
+    <h1>News &amp; Devlog</h1>
+    <p>Dispatches from inside the studio.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="devlog">Devlog</button>
+      <button class="filter-btn" data-filter="announcement">Announcements</button>
+      <button class="filter-btn" data-filter="community">Community</button>
+    </div>
+
+    <div class="grid grid-3" data-tbs-posts="all"></div>
+      </article>
+
+      <article class="news-card reveal" data-category="devlog">
+        <div class="news-thumb"><img src="https://picsum.photos/seed/n2/800/500?grayscale" alt=""></div>
+        <div class="news-body">
+          <span class="news-date">Devlog · Update 02</span>
+          <h3>Building Rajabazar in 3D</h3>
+          <p>How we're recreating the streets of Rawalpindi as a playable nightmare — reference trips, blockouts and lighting.</p>
+          <button class="link-more" data-modal="post-2">Read More →</button>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-category="devlog">
+        <div class="news-thumb"><img src="https://picsum.photos/seed/n3/800/500?grayscale" alt=""></div>
+        <div class="news-body">
+          <span class="news-date">Devlog · Update 03</span>
+          <h3>Enemy AI: Making the Infected Feel Alive</h3>
+          <p>Behaviour trees, sound perception and swarm logic — the systems that make every encounter unpredictable.</p>
+          <button class="link-more" data-modal="post-3">Read More →</button>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-category="announcement">
+        <div class="news-thumb"><img src="https://picsum.photos/seed/n4/800/500?grayscale" alt=""></div>
+        <div class="news-body">
+          <span class="news-date">Announcement</span>
+          <h3>Sector Zero Officially Announced</h3>
+          <p>The Black Studio unveils its debut title — a 3D zombie-apocalypse survival game set in Pakistan.</p>
+          <button class="link-more" data-modal="post-4">Read More →</button>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-category="community">
+        <div class="news-thumb"><img src="https://picsum.photos/seed/n5/800/500?grayscale" alt=""></div>
+        <div class="news-body">
+          <span class="news-date">Community</span>
+          <h3>Join the Survivors Discord</h3>
+          <p>Our community server is live — share feedback, ask questions and follow development in real time.</p>
+          <button class="link-more" data-modal="post-5">Read More →</button>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-category="announcement">
+        <div class="news-thumb"><img src="https://picsum.photos/seed/n6/800/500?grayscale" alt=""></div>
+        <div class="news-body">
+          <span class="news-date">Announcement</span>
+          <h3>We're Hiring: 3D Environment Artist</h3>
+          <p>Help us build Rawalpindi. Remote-friendly, Unity 3D pipeline. Details on the careers page.</p>
+          <button class="link-more" data-modal="post-6">Read More →</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<div class="grid grid-3" data-tbs-posts="all"></div>
+
+<!-- Hidden post content for modal -->
+<div id="post-1" hidden data-title="Combat System Prototype Complete" data-meta="Devlog · Update 01">
+  <p>The core combat loop is now fully playable in-engine. Over the past weeks we've implemented a complete 3D shooting framework — weapon handling, recoil patterns, spread, hit detection and damage falloff.</p>
+  <p>Melee defence is also in: a shove/strike system that lets you create space when a zombie gets too close. Stamina ties both systems together, so you can't simply sprint and swing forever.</p>
+  <p>Next up: enemy reaction animations, weapon variety and the first pass on sound design.</p>
+</div>
+<div id="post-2" hidden data-title="Building Rajabazar in 3D" data-meta="Devlog · Update 02">
+  <p>Setting a horror game in Rawalpindi means the environment has to feel lived-in. We spent weeks studying reference — narrow lanes, tangled wiring, shopfronts, signage and the specific way light falls between buildings at dusk.</p>
+  <p>Our approach: block out the real street layout first, then layer narrative decay on top. Cars abandoned mid-turn, barricades, scattered belongings — the story of the collapse should be readable from the geometry alone.</p>
+  <p>Lighting is doing the heavy lifting. Warm sodium lamps against cold moonlight, thick fog for draw-distance occlusion, and deep shadows in every alley.</p>
+</div>
+<div id="post-3" hidden data-title="Enemy AI: Making the Infected Feel Alive" data-meta="Devlog · Update 03">
+  <p>Zombies are only scary if they feel unpredictable. We built our AI on behaviour trees with layered perception — sight cones, sound radius and a simple "memory" of where you were last detected.</p>
+  <p>Swarm logic allows groups to spread, flank and converge. Some infected are slow and numerous; others are fast and solitary. Audio cues are your only reliable warning.</p>
+  <p>The result: every encounter forces a decision — fight, hide, or run.</p>
+</div>
+<div id="post-4" hidden data-title="Sector Zero Officially Announced" data-meta="Announcement">
+  <p>Today we're proud to officially announce <strong>Sector Zero</strong> — an original 3D zombie-apocalypse survival game set in a devastated Rawalpindi, Pakistan.</p>
+  <p>Developed in Unity 3D by The Black Studio, Sector Zero focuses on survival, exploration, combat, atmosphere and storytelling — combining intense zombie horror with an authentic South Asian urban setting.</p>
+  <p>Status: Under Development — Coming Soon.</p>
+</div>
+<div id="post-5" hidden data-title="Join the Survivors Discord" data-meta="Community">
+  <p>Our community server is now live. It's the fastest way to follow development — we post work-in-progress screenshots, run polls on design decisions, and answer questions directly.</p>
+  <p>Channels include #devlog, #feedback, #bug-reports and #off-topic. See you inside.</p>
+</div>
+<div id="post-6" hidden data-title="We're Hiring: 3D Environment Artist" data-meta="Announcement">
+  <p>We're looking for a 3D Environment Artist with strong skills in modular kit design, PBR texturing and Unity 3D pipelines.</p>
+  <p>You'll work directly with the CEO on building the districts of Sector Zero — from blockout to final lighting pass. Remote-friendly.</p>
+  <p>Head to the <a href="careers.html" style="color:var(--accent-2)">Careers page</a> to apply.</p>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">×</button>
+    <div class="modal-meta"></div>
+    <h2 class="modal-title"></h2>
+    <div class="modal-content"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:1rem">
+          <span class="logo-mark">TBS</span><span class="logo-text">The Black<small>Studio</small></span></a>
+        <p>An indie game studio from Pakistan, building dark, cinematic and immersive worlds.</p>
+        <div class="socials"><a href="#">TW</a><a href="#">YT</a><a href="#">DC</a><a href="#">IG</a></div>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press Kit</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Game</h4><ul>
+        <li><a href="game.html">Sector Zero</a></li><li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">Devlog</a></li><li><a href="game.html#roadmap">Roadmap</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4>
+        <p>Rawalpindi, Pakistan</p>
+        <p><a href="mailto:contact@theblackstudio.com">contact@theblackstudio.com</a></p>
+        <p style="margin-top:.6rem">CEO: Muhammad Atiqur Rehman</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> The Black Studio. All rights reserved.</span>
+      <span>Sector Zero — Under Development</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
